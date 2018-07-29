@@ -1,0 +1,34 @@
+body {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.pageSections {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    list-style-type: none;
+    background-color: #5381ff;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 1rem 1rem;
+    transition: all .3s ease-in;
+    a {
+        color: #f9f9f9;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: #8eadff;
+    }
+}
+
+.navContent {
+    margin-top: 1rem;
+}

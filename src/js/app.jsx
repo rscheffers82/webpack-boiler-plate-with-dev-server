@@ -5,6 +5,8 @@ import Navbar from './components/navbar';
 import Intro from './components/intro';
 import Experience from './components/experience';
 
+import '../styles/style.scss';
+
 const App = () => {
     return (
         <Router>
