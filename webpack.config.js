@@ -1,5 +1,4 @@
-const webpack = require('webpack');
-const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
@@ -29,6 +28,9 @@ module.exports = {
         ]
     },
     plugins: [
+        new CopyWebpackPlugin([
+            { from: './src/public/index.html', to: './index.html' }
+        ])
     ],
     devServer: {
         contentBase: __dirname + '/dist',
